@@ -1,0 +1,156 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    margin: 2em 5% 0;
+    height: calc(100vh - 2em);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Gestion gradient */
+    background: linear-gradient(233deg, #f39b48, #b288ff);
+    background-size: 400% 400%;
+    animation: gradient-color-change 15s infinite ease;
+    -webkit-animation: gradient-color-change 15s ease infinite;
+    -moz-animation: gradient-color-change 15s ease infinite;
+    -o-animation: gradient-color-change 15s ease infinite;
+
+}
+
+section.form-zn{
+    background-color: white;
+    margin: 1vmin;
+    padding: 2em 5vmin;
+    border-radius: 5px;
+    width: 483px;
+}
+
+
+h1.main-title{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 3em;
+    margin-bottom: 2rem;
+    color: rgb(9, 9, 58);
+}
+
+div.rs-icon-zn{
+    display: flex;
+    justify-content: center;
+    margin-top: .5em;
+}
+
+svg.svg{
+    width: 1.5em;
+    height: 2em;
+    margin: 0 0.5em;
+    filter: grayscale(100%);
+    transition: all ease .5s;
+}
+
+svg.svg:hover{
+    filter: grayscale(0%)
+}
+
+
+body:hover{
+    fill: currentColor;
+}
+
+p.informations{
+    font-size: .7em;
+    color: grey;
+}
+
+p.informations:first-of-type:hover{
+    text-decoration: underline;
+}
+
+span.icon{
+    font-weight: bold;
+    color: #FF5733;
+}
+
+div.inputs-zn{
+    margin: 1em 0;
+    margin-bottom: .5em;
+    text-align: left;
+    width: 100%;
+}
+
+label.labels{
+    display: block;
+    margin-bottom: .5em;
+}
+
+input.inputs{
+    width: 100%;
+    height: 2em;
+    border: #FF5733 solid 1px;
+    border-radius: 2px;
+    padding: 2em 1em;
+    box-sizing: border-box;
+}
+
+input.inputs::placeholder{
+    color: #b288ff;
+    font-weight: bold;
+}
+
+input.inputs:first-of-type{
+    margin-bottom: 2em;
+}
+
+button.form-button{
+    margin-top: 1em;
+    margin-bottom: 2em;
+    border: none;
+    box-shadow: none;
+    background-color: #FF5733;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: .5em 4em;
+    border-radius: 2px;
+}
+
+button.form-button:hover{
+    animation: color-change .5s linear alternate both;
+}
+
+/* ANIMATIONS */
+    /* GRADIENT BACKGROUND */
+@keyframes gradient-color-change {
+    0%{background-position: 0% 94%}
+    50%{background-position: 100% 7%}
+    100%{background-position: 0% 94%}
+}
+
+@-webkit-keyframes gradient-color-change {
+    0%{background-position:0% 94%}
+    50%{background-position:100% 7%}
+    100%{background-position:0% 94%}
+}
+@-moz-keyframes gradient-color-change {
+    0%{background-position:0% 94%}
+    50%{background-position:100% 7%}
+    100%{background-position:0% 94%}
+}
+@-o-keyframes gradient-color-change {
+    0%{background-position:0% 94%}
+    50%{background-position:100% 7%}
+    100%{background-position:0% 94%}
+}
+
+    /*HOVER BUTTON */
+@keyframes color-change {
+    0% {
+        background-color: #FF5733;
+    }
+    100% {
+        background-color: #b288ff;
+    }
+}
+
+
+/* DESKTOP VERSION */
